@@ -8,15 +8,19 @@ for i in range(grades_count):
 print(grades)
 result = 0
 for x in grades:
-    if x < 38:
-        result = x
-        print(x)
-    elif (x + 1) % 5 == 0:
-        result = x + 1
-        print(result)
-    elif (x + 2) % 5 == 0:
-        result = x + 2
-        print(result)
-    else:
+    if x > 0 and x < 100:
+        if x < 38:
+            result = x
+            print(x)
+        elif (x + 1) % 5 == 0:
+            result = x + 1
+            print(result)
+        elif (x + 2) % 5 == 0:
+            result = x + 2
+            print(result)
+        else:
+            result = x
+            print(result)
+    elif x == 0 or x == 100:
         result = x
         print(result)
