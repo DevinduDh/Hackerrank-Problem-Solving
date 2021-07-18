@@ -8,7 +8,7 @@ for i in range(grades_count):
 print(grades)
 result = 0
 for x in grades:
-    if x > 0 and x < 100:
+    if 0 < x < 100:
         if x < 38:
             result = x
             print(x)
