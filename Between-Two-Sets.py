@@ -1,7 +1,7 @@
 # Between two sets
 
-a = [3, 4]
-b = [24, 48]
+a = [1]
+b = [72, 48]
 
 n = len(a)
 m = len(b)
@@ -11,7 +11,7 @@ Y = max(a)
 X1 = []
 X2 = []
 
-for i in range(2, X + 1):
+for i in range(1, X + 1):
     # print("i = {}".format(i))
     for ele in b:
         # print("ele = {}".format(ele))
