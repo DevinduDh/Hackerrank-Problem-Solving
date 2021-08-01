@@ -1,4 +1,4 @@
-arr = [1,2,3,4,5,4,3,2,1,3,4]
+arr = [1, 2, 3, 4, 5, 4, 3, 2, 1, 3, 4]
 count_1 = 0
 count_1 = 0
 count_2 = 0
@@ -26,11 +26,11 @@ count_list['3'].append(count_3)
 count_list['4'].append(count_4)
 count_list['5'].append(count_5)
 
-#print(count_list)
+# print(count_list)
 
 # Find item with Max Value in Dictionary
 itemMaxValue = max(count_list.items(), key=lambda x: x[1])
-#print('Maximum Value in Dictionary : ', itemMaxValue[1])
+# print('Maximum Value in Dictionary : ', itemMaxValue[1])
 listOfKeys = list()
 # Iterate over all the items in dictionary to find keys with max value
 for key, value in count_list.items():
@@ -39,11 +39,9 @@ for key, value in count_list.items():
 
 for i in range(len(listOfKeys)):
     listOfKeys[i] = int(listOfKeys[i])
-#print(min(listOfKeys))
+# print(min(listOfKeys))
 
 if len(listOfKeys) == 1:
     print(listOfKeys[0])
 else:
     print(min(listOfKeys))
-
-
